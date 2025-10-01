@@ -635,7 +635,7 @@ footer a:hover {
     left: 0;
     width: 100%;
     padding: 15px 0;
-    display: none; /* You can toggle this with JS if needed */
+    display: flex; 
     z-index: 999;
   }
 
