@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="contact-page">
+
+
+    <!-- Header Navigation (same as other pages) -->
+    <header>
+        <nav class="navbar">
+            <div class="profile-logo">
+                <img src="images/Jawaher Logo.jpg" alt="Jawaher Alsharif" class="nav-profile" />
+            </div>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html#about"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 120px;">
+        <section class="table-section">
+            <h1>Contact Me</h1>
+            <form action="https://webhook.site/f9ed4d08-0b61-40ed-ba58-82f595a6e1f7" method="POST">
+                <!-- Name -->
+                <label for="name">Name <span style="color: red;">*</span></label>
+                <input type="text" id="name" name="name" required />
+
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+
+                <!-- Message -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="10" required></textarea>
+
+                <!-- Message Type -->
+                <label>Message Type</label><br />
+                <label><input type="radio" name="message_type" value="Inquiry" required /> Inquiry</label>
+                <label><input type="radio" name="message_type" value="Complaint" required /> Complaint</label>
+
+                <!-- Submit -->
+                <br><br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Jawaher Alsharif. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
