@@ -621,3 +621,111 @@ footer a:hover {
     font-size: 12px;
   }
 }
+
+/* === Responsive Design for Mobile === */
+@media (max-width: 768px) {
+
+  /* Navbar fixes */
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    display: none; /* You can toggle this with JS if needed */
+    z-index: 999;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar ul li a {
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  /* About section layout */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .about-photo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle1,
+  .circle2 {
+    display: none; /* Hide decorative circles for clarity on mobile */
+  }
+
+  .about-details {
+    width: 100%;
+  }
+
+  /* Skills list fix */
+  ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  /* Buttons full-width */
+  .btn,
+  .fragment-link {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Form and contact boxes */
+  form input,
+  form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .info-boxes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+
+  /* Table text size (for schedule page) */
+  table {
+    font-size: 14px;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  th,
+  td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  /* Social icons resize */
+  .socials a {
+    font-size: 20px;
+  }
+
+  /* Footer spacing */
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+}
