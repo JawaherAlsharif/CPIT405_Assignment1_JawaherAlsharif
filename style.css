@@ -483,93 +483,78 @@ footer a {
 footer a:hover {
     color: #d9efff;
 }
-
-/* === Responsive Design === */
-@media (max-width: 992px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-photo {
-        margin-bottom: 20px;
-    }
-
-    .about-details {
-        width: 90%;
-    }
-
-    .info-boxes {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    table {
-        font-size: 14px;
-    }
-}
-
+/* media */
 @media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        gap: 15px;
-        background: rgba(0, 0, 0, 0.7);
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        display: none;
-        /* For optional mobile menu toggle */
-    }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
 
-    .navbar ul li a {
-        justify-content: center;
-    }
+  .navbar.active ul {
+    display: flex;
+  }
 
-    .hero-content {
-        padding: 20px;
-    }
+  header {
+    padding: 15px 0;
+  }
 
-    .btn,
-    .fragment-link {
-        width: 100%;
-        box-sizing: border-box;
-    }
+  .profile-logo {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-    form input,
-    form textarea {
-        width: 100%;
-        box-sizing: border-box;
-    }
+  .nav-profile {
+    width: 35px;
+    height: 35px;
+  }
 
-    .table-section {
-        width: 95%;
-        padding: 10px;
-    }
-}
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-@media (max-width: 480px) {
-    .logo-quote {
-        font-size: 20px;
-    }
+  .about-photo img {
+    width: 180px;
+    height: 180px;
+  }
 
-    .intro {
-        font-size: 16px;
-    }
+  .about-details {
+    padding: 0 20px;
+  }
 
-    .socials a {
-        font-size: 18px;
-    }
+  .logo-quote {
+    font-size: 20px;
+  }
 
-    th,
-    td {
-        font-size: 12px;
-        padding: 8px;
-    }
+  .intro {
+    font-size: 16px;
+  }
 
-    .about-photo img {
-        width: 180px;
-        height: 180px;
-    }
+  .btn,
+  .fragment-link {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .table-section {
+    padding: 10px;
+    width: 95%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px 10px;
+  }
 }
